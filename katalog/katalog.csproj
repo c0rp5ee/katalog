@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="03.jpg" />
+    <None Remove="photo_2024-12-17_14-37-43.jpg" />
+    <None Remove="photo_2024-12-17_15-06-45.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="03.jpg" />
+    <Resource Include="photo_2024-12-17_14-37-43.jpg" />
+    <Resource Include="photo_2024-12-17_15-06-45.jpg" />
+  </ItemGroup>
+
+</Project>

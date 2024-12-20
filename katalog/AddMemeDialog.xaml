@@ -1,0 +1,16 @@
+﻿<Window x:Class="MemeCatalog.AddMemeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Meme" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/photo_2024-12-17_15-06-45.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="NameTextBox" Text="Ведите имя мемчика!" Margin="423,159,95,217" RenderTransformOrigin="0.492,0.931" TextAlignment="Center" BorderBrush="{x:Null}" Background="#FFFFECF9" TextChanged="NameTextBox_TextChanged"/>
+        <Button Content="Выберите мемчик/гифку/стикер" Click="SelectImageButton_Click" Margin="423,259,95,121" Background="#FFFFC4E8" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="SelectedImagePath" Margin="95,45,95,317" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button Content="Добавить" Click="AddButton_Click" Margin="95,259,400,117" Background="#FFFFC4E8" BorderBrush="{x:Null}"/>
+        <ComboBox x:Name="categoriesBox" HorizontalAlignment="Left" Height="58" Margin="204,159,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button Content="Редактировать" HorizontalAlignment="Left" Height="58" Margin="95,159,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" Background="#FFFFC4E8" BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="katalog.categoriesEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:katalog"
+        mc:Ignorable="d"
+        Title="categoriesEdit" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/photo_2024-12-17_15-06-45.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="CList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="513,105,46,132" Background="#FFFFECF9" FontFamily="Microsoft Sans Serif"/>
+        <TextBox x:Name="CText" HorizontalAlignment="Left" Height="66" Margin="48,236,0,0" TextWrapping="Wrap" Text="Введите название категории" VerticalAlignment="Top" Width="433" FontFamily="Microsoft Sans Serif"/>
+        <Button Content="Добавить:)" HorizontalAlignment="Left" Height="64" Margin="198,129,0,0" VerticalAlignment="Top" Width="123" Click="AddButton_Click" Background="#FFFFC4E8" FontFamily="Microsoft Sans Serif"/>
+        <Button Content="Удалить:(" HorizontalAlignment="Left" Height="64" Margin="347,129,0,0" VerticalAlignment="Top" Width="134" Click="RemoveButton_Click" Background="#FFFFC4E8" FontFamily="Microsoft Sans Serif"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Height="64" Margin="48,129,0,0" VerticalAlignment="Top" Width="123" Click="CloseButton_Click" Background="#FFFFC4E8" FontFamily="Microsoft Sans Serif"/>
+
+    </Grid>
+</Window>

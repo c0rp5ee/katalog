@@ -1,0 +1,17 @@
+﻿<Window x:Class="katalog.editor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EditMeme" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/photo_2024-12-17_15-06-45.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="NameTextBox" Text="Введите имя мемчика!" Margin="438,114,117,35" RenderTransformOrigin="0.492,0.931" TextAlignment="Center" Background="#FFFFECF9" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif"/>
+        <Button Content="Выберите мемчик/гифку/стикер" Margin="117,270,377,110" Click="SelectImageButton_Click" BorderBrush="{x:Null}" Background="#FFFFC4E8" FontFamily="Microsoft Sans Serif"/>
+        <TextBlock x:Name="SelectedImagePath" Margin="117,28,117,347"/>
+        <Button Content="Отмена" Click="CancelButton_Click" Margin="117,191,377,189" Background="#FFFFC4E8" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif"/>
+        <ComboBox x:Name="categoriesBox" HorizontalAlignment="Left" Height="51" Margin="227,117,0,0" VerticalAlignment="Top" Width="196" BorderBrush="#FFACACAC"/>
+        <Button Content="Обновить" Click="UpdateButton_Click" Margin="117,345,377,35" BorderBrush="{x:Null}" Background="#FFFFC4E8" FontFamily="Microsoft Sans Serif"/>
+        <Button Content="Редактировать" HorizontalAlignment="Left" Height="51" Margin="117,117,0,0" VerticalAlignment="Top" Width="95" Click="EditCategoriesButton_Click" Background="#FFFFC4E8" BorderBrush="{x:Null}" FontFamily="Microsoft Sans Serif"/>
+    </Grid>
+</Window>
